@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 0;
+}
+.todoapp_container{
+  width: 70%;
+  margin: 15px auto;
+  padding: 10px 10px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+}
+
+.todoapp_container form{
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.todoapp_container form input{
+  width: 95%;
+  padding: 16px;
+  border: 0;
+  outline: 0;
+  background: rgba(255, 255, 255, 0.787);
+  box-shadow: 2px 2px 5px rgb(163, 163, 163) ,
+  -2px -2px 5px rgb(236, 236, 236) ;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #8a8a8a;
+}
+::placeholder {
+  color: rgba(107, 75, 180 , .5);
+}
+.todoapp_container form span{
+  position: absolute;
+  top: 50%;
+  right: 1.5%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 1);
+  color:rgb(175, 106, 216 ,1);
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 40px;
+  line-height: 55px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #eee;
+  box-shadow: 2px 2px 5px rgb(163, 163, 163) ,
+  -2px -2px 5px rgb(236, 236, 236) ;
+}
+.pair_task_box{
+  margin-top: 2%;
+  padding: 0 10px;
+}
+.tasks_box{
+  width: 95%;
+  margin: auto;
+  padding: 10px;
+  background: #fafafa;
+  overflow: hidden;
+  border-radius: 7px;
+  margin-bottom:2%;
+}
+.tasks_box.finish span:first-of-type{
+  text-decoration: line-through;
+  color: rgb(57, 156, 39);
+}
+.tasks_box:last-child{
+  margin-bottom:0%;
+}
+.task_el{
+  float: left;
+  font-size: 20px;
+  padding: 5px 10px;
+  width: auto;
+  text-align: left;
+  overflow: auto;
+  height: auto;
+  
+
+}
+.delete ,.finish_btn{
+  float: right;
+  font-size: 18px;
+  background: rgb(238, 95, 95);
+  color: #fff;
+  padding: 7px 15px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.finish_btn{
+  background: rgb(57, 156, 39);
+  margin-right: .5%;
+}
+
+.info{
+  width: 93%;
+  padding: 20px;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 2%;
+  border-radius: 7px;
+}
+.tasks_count{
+  float: left;
+  color: rgb(119, 119, 119);
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.tasks_count span{
+  color: rgb(106, 31, 167);
+}
+.completed_tasks{
+  float: right;
+  color: rgb(119, 119, 119);
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.completed_tasks span{
+  color: rgb(147, 31, 167);
+}
+.no_tasks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 93%;
+  margin: auto;
+  padding: 10px;
+  margin-top: 2%;
+  letter-spacing: 1.5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
